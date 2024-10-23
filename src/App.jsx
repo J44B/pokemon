@@ -2,6 +2,7 @@ import {
     createBrowserRouter,
     createRoutesFromElements,
     Route,
+    RouterProvider,
 } from 'react-router-dom'
 
 const router = createBrowserRouter(
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
 function App() {
     return (
         <>
-            <h1 className="text-3xl font-bold underline">Pokemon</h1>
+            <RouterProvider router={router} />
         </>
     )
 }
