@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
+import Home from '../pages/Home'
 
 function Navbar() {
     return (
         <div className="navbar bg-base-100 border-b-2">
-            <Link to="/">
-                <a className="btn btn-ghost text-xl">
-                    pokemon router experience
-                </a>
-            </Link>
+            <li className="btn btn-ghost text-xl">
+                <Link to={Home}>pokemon router experience</Link>
+            </li>
         </div>
     )
 }
